@@ -11,6 +11,11 @@ module.exports = {
         exclude: /node_modules/,
         use: 'ts-loader',
       },
+      {
+        test: /\.(tsx?|js)$/,
+        exclude: /node_modules/,
+        use: 'babel-loader',
+      },
     ],
   },
   resolve: {
