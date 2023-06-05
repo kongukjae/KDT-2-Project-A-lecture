@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/kongukjae/KDT-2-Project-A-lecture/issues"
   },
-  "homepage": "https://github.com/kongukjae/KDT-2-Project-A-lecture#readme"
+  "homepage": "https://github.com/kongukjae/KDT-2-Project-A-lecture#readme",
+  "devDependencies": {
+    "typescript": "^5.1.3"
+  }
 }
