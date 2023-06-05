@@ -1,3 +1,4 @@
+import "./test.css"
 import React from 'react';
 
 const App = () => {
