@@ -1,12 +1,15 @@
-memo
-1. 프로젝트 진행을 위한 스택 구축
-   
+# 🚀 Welcome to your new awesome project!
 
-stack
-1. typescript
-2. react, react-dom
-3. express
-4. tailwindCSS
+This project has been created using **webpack-cli**, you can now run
 
-5. IEX 미국 주식 API
-6. 
+```
+npm run build
+```
+
+or
+
+```
+yarn build
+```
+
+to bundle your application
