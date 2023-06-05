@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node ./dist/server.bundle.js",
+    "build": "npx webpack"
   },
   "repository": {
     "type": "git",
@@ -29,6 +31,7 @@
     "babel-loader": "^9.1.2",
     "css-loader": "^6.8.1",
     "style-loader": "^3.3.3",
+    "terser-webpack-plugin": "^5.3.9",
     "ts-loader": "^9.4.3",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.3",
