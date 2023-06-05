@@ -1,5 +1,6 @@
 // webpack 수동 작성
 const path = require('path');
+const TerserPlugin = require('terser-webpack-plugin');
 
 const clientConfig = {
   entry: './build/src/index.tsx',
@@ -24,6 +25,20 @@ const clientConfig = {
   },
   resolve: {
     extensions: ['.tsx','.ts','.js'],
+  },
+  optimization: {
+    minimizer: [
+      new TerserPlugin({
+        terserOptions: {
+          compress: {
+            drop_console: true, // 콘솔 로그 제거
+          },
+          output: {
+            comments: false, // 주석 제거
+          },
+        },
+      }),
+    ],
   },
   output: {
     filename: 'client.bundle.js',
@@ -51,5 +66,19 @@ const serverConfig = {
     path: path.resolve(__dirname, 'dist'),
   },
   target: 'node',
+  optimization: {
+    minimizer: [
+      new TerserPlugin({
+        terserOptions: {
+          compress: {
+            drop_console: true, // 콘솔 로그 제거
+          },
+          output: {
+            comments: false, // 주석 제거
+          },
+        },
+      }),
+    ],
+  },
 };
 module.exports = [clientConfig, serverConfig];
