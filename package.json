@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "node ./dist/server.bundle.js",
+    "start": "node ./dist/server.bundle.js",
     "build": "npx webpack"
   },
   "repository": {
@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "express": "^4.18.2",
+    "faker": "^6.6.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
