@@ -6,12 +6,7 @@
  *  teamMembers: 팀원 이름
  * }
  */
-interface interfaceClassBuildProjectObjectTeaminformation {
-  teamNumber: number;
-  teamName: string;
-  teamProjectManagerName: string;
-  teamMembers: string[];
-}
+import interfaceClassBuildProjectObjectTeaminformation from "../interface/interface-team-information";
 
 /**
  * 클래스 classBuildProjectObjectTeaminformation 설명
