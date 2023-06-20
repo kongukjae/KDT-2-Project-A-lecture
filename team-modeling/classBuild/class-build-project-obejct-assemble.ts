@@ -1,5 +1,5 @@
 /**
- * 클래스 classBuildProjectList 설명
+ * 클래스 classBuildProjectObejctAssemble 설명
  * @constructor
  * @param {string[]} projectName - 프로젝트 이름
  * @returns {object} - 프로젝트 이름을 키로 하는 객체
@@ -14,7 +14,7 @@
  *
  */
 
-class classBuildProjectList {
+class classBuildProjectObejctAssemble {
   [key: string]: object;
 
   constructor(...projectName: string[]) {
@@ -27,4 +27,4 @@ class classBuildProjectList {
   }
 }
 
-export default classBuildProjectList;
+export default classBuildProjectObejctAssemble;

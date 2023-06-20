@@ -1,12 +1,12 @@
 /**
- * interface classBuildProjectTeam {
+ * interface classBuildProjectObjectTeaminformation {
  *  teamNumber : 팀 번호
  *  teamName: 학생 이름
  *  teamProjectManagerName: 팀장 이름
  *  teamMembers: 팀원 이름
  * }
  */
-interface interfaceClassBuildProjectTeam {
+interface interfaceClassBuildProjectObjectTeaminformation {
   teamNumber: number;
   teamName: string;
   teamProjectManagerName: string;
@@ -14,7 +14,7 @@ interface interfaceClassBuildProjectTeam {
 }
 
 /**
- * 클래스 classBuildProjectTeam 설명
+ * 클래스 classBuildProjectObjectTeaminformation 설명
  * @constructor
  * @param {number} teamNumber - 팀 번호
  * @param {string} teamName - 팀 이름
@@ -24,7 +24,7 @@ interface interfaceClassBuildProjectTeam {
  * @example
  * const team = new KDTBuildProjectTeam(1, "KDT", "홍길동", ["춘향이", "그린컴"]);
  */
-class classBuildProjectTeam implements interfaceClassBuildProjectTeam {
+class classBuildProjectObjectTeaminformation implements interfaceClassBuildProjectObjectTeaminformation {
   teamNumber: number;
   teamName: string;
   teamProjectManagerName: string;
@@ -43,4 +43,4 @@ class classBuildProjectTeam implements interfaceClassBuildProjectTeam {
   }
 }
 
-export default classBuildProjectTeam;
+export default classBuildProjectObjectTeaminformation;
